@@ -1,5 +1,5 @@
 export const rps = (opMove) => {
-    const moves = ['rock', 'paper', 'scissors']
+    const moves = ["rock", "paper", "scissors"]
     const randomMove = moves[Math.floor(Math.random() * moves.length)]
     if (!opMove) {
         return {'player':randomMove}
