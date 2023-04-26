@@ -120,7 +120,20 @@ export const rps = (opMove) => {
                     return {"player":randomMove, "opponent":opMove, "result":"tie"}
                 }
             default:
-                return {"player":randomMove, "opponent":opMove, "result":"error", message: "Invalid move. Please use one of the following: rock, paper, scissors, lizard, spock."}
+                console.error(`${opMove} is out of range.`)
+                console.log(`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
+
+                - Scissors CUTS Paper
+                - Paper COVERS Rock
+                - Rock SMOOSHES Lizard
+                - Lizard POISONS Spock
+                - Spock SMASHES Scissors
+                - Scissors DECAPITATES Lizard
+                - Lizard EATS Paper
+                - Paper DISPROVES Spock
+                - Spock VAPORIZES Rock
+                - Rock CRUSHES Scissors`)
+                break;
         }
     }
 }

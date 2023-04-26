@@ -63,7 +63,12 @@ export const rps = (opMove) => {
                     return {"player":randomMove, "opponent":opMove, "result":"tie"}
                 }
             default:
-                return {"player":randomMove, "opponent":opMove, "result":"error", message: "Invalid move. Please use one of the following: rock, paper, scissors."}
+                console.error(`${opMove} is out of range.`)
+                console.log(`Rules for Rock Paper Scissors:
+    - Scissors CUTS Paper
+    - Paper COVERS Rock
+    - Rock CRUSHES Scissors`)
+    break;  
         }
     }
 }
