@@ -2,7 +2,7 @@ export const rpsls = (opMove) => {
     const moves = ['rock', 'paper', 'scissors', 'lizard', 'spock']
     const randomMove = moves[Math.floor(Math.random() * moves.length)]
     if (!opMove) {
-        return {"player":randomMove}
+        return JSON.stringify({"player":randomMove})
     } else {
         switch (randomMove) {
             case 'rock':
