@@ -10,30 +10,30 @@ export const rps = (opMove) => {
                     return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'scissors') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'rock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"tie"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"tie"})
                 }
             case 'paper':
                 if (opMove === 'scissors') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'rock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'paper') {
-                    return {"player":randomMove, "opponent":opMove, "result":"tie"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"tie"})
                 }
             case 'scissors':
                 if (opMove === 'rock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'paper') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'scissors') {
-                    return {"player":randomMove, "opponent":opMove, "result":"tie"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"tie"})
                 }
             default:
                 console.error(`${opMove} is out of range.`)

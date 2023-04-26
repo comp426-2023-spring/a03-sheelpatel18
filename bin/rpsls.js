@@ -7,83 +7,83 @@ export const rpsls = (opMove) => {
         switch (randomMove) {
             case 'rock':
                 if (opMove === 'paper') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'scissors') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'rock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"tie"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"tie"})
                 }
                 if (opMove === 'lizard') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringifyg({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'spock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
             case 'paper':
                 if (opMove === 'scissors') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'rock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'paper') {
-                    return {"player":randomMove, "opponent":opMove, "result":"tie"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"tie"})
                 }
                 if (opMove === 'lizard') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'spock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
             case 'scissors':
                 if (opMove === 'rock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'paper') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'scissors') {
-                    return {"player":randomMove, "opponent":opMove, "result":"tie"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"tie"})
                 }
                 if (opMove === 'lizard') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'spock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
             case 'lizard':
                 if (opMove === 'rock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'paper') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'scissors') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'lizard') {
-                    return {"player":randomMove, "opponent":opMove, "result":"tie"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"tie"})
                 }
                 if (opMove === 'spock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
             case 'spock':
                 if (opMove === 'rock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'paper') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'scissors') {
-                    return {"player":randomMove, "opponent":opMove, "result":"win"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"win"})
                 }
                 if (opMove === 'lizard') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'spock') {
-                    return {"player":randomMove, "opponent":opMove, "result":"tie"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"tie"})
                 }
             default:
                 console.error(`${opMove} is out of range.`)
