@@ -2,12 +2,12 @@ export const rps = (opMove) => {
     const moves = ["rock", "paper", "scissors"]
     const randomMove = moves[Math.floor(Math.random() * moves.length)]
     if (!opMove) {
-        return {'player':randomMove}
+        return JSON.stringify({'player':randomMove})
     } else {
         switch (randomMove) {
             case 'rock':
                 if (opMove === 'paper') {
-                    return {"player":randomMove, "opponent":opMove, "result":"lose"}
+                    return JSON.stringify({"player":randomMove, "opponent":opMove, "result":"lose"})
                 }
                 if (opMove === 'scissors') {
                     return {"player":randomMove, "opponent":opMove, "result":"win"}
